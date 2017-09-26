@@ -526,7 +526,7 @@ NSTimeInterval const PIPE_TO_FILE_PROGRESS_INTERVAL = 0.1;
         socket->_disconnectCallback = nil;
         callback();
     } else {
-        [socket->_socket disconnectAfterReadingAndWriting];
+        [socket->_socket disconnect];
     }      
 }
 
